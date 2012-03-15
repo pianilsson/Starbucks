@@ -24,6 +24,7 @@ public class StarbucksService {
 			Order order) {
  
 		System.out.println("Server retrieves orderNr: " + orderNumber);
+		System.out.println("Server retrieves orderNr: " + orderNumber);
 		
 		String result = "Order nr: " + orderNumber + " will be updated with additions: " + order.getAdditions();
 		result += " and expects: " + expectations; 
