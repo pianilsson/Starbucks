@@ -32,7 +32,7 @@ public class StarbucksServiceRestEasyTest {
 			client = new DefaultHttpClient();
 
 			put = new HttpPut("http://localhost:8080/"
-					+ "Starbucks-1.0-SNAPSHOT" + "/order/put" + "/1234");
+					+ "starbucks" + "/order/put" + "/1234");
 
 			StringEntity input = new StringEntity("{\"additions\":\"lactose\"}");
 			input.setContentType("application/json");			
@@ -77,7 +77,7 @@ public class StarbucksServiceRestEasyTest {
 			client = new DefaultHttpClient();
 
 			options = new HttpOptions("http://localhost:8080/"
-					+ "Starbucks-1.0-SNAPSHOT" + "/order/options" + "/1234");
+					+ "starbucks" + "/order/options" + "/1234");
 
 			HttpResponse response = client.execute(options);
 
@@ -114,7 +114,8 @@ public class StarbucksServiceRestEasyTest {
 			client = new DefaultHttpClient();
 
 			post = new HttpPost("http://localhost:8080/"
-					+ "Starbucks-1.0-SNAPSHOT" + "/order/post");
+					+ "starbucks" + "/order/post");
+//			+ "Starbucks-1.0-SNAPSHOT" + "/order/post");
 
 			StringEntity input = new StringEntity("{\"drink\":\"machiato\",\"cost\":\"10\"}");
 			input.setContentType("application/json");
