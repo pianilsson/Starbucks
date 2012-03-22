@@ -32,7 +32,7 @@ public class StarbucksServiceRestEasyTest {
 			client = new DefaultHttpClient();
 
 			put = new HttpPut("http://localhost:8080/"
-					+ "starbucks" + "/order/put" + "/1234");
+					+ "starbucks/rest" + "/order/put" + "/1234");
 
 			StringEntity input = new StringEntity("{\"additions\":\"lactose\"}");
 			input.setContentType("application/json");			
@@ -77,7 +77,7 @@ public class StarbucksServiceRestEasyTest {
 			client = new DefaultHttpClient();
 
 			options = new HttpOptions("http://localhost:8080/"
-					+ "starbucks" + "/order/options" + "/1234");
+					+ "starbucks/rest" + "/order/options" + "/1234");
 
 			HttpResponse response = client.execute(options);
 
