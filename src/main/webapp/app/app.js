@@ -1,12 +1,24 @@
-var App = Em.Application.create();
+EME = Em.Application.create({
+    ready: function() {
+        this._super();
+    }
+});
 
+EME.store = DS.Store.create();
+
+
+
+
+
+
+/*
 App.MyView = Em.View.extend({
 	mouseDown : function() {
 		window.alert("hello world!");
 	}
 });
 
-/*
+
 var Coffee = Ember.Object.extend({
 	
 	coffees: [ { name: 'machiato' },
@@ -25,7 +37,7 @@ var Coffee = Ember.Object.extend({
 
 	
 });
-*/
+
 
 App.CoffeeView = Em.View.extend({
 	
@@ -41,4 +53,5 @@ App.PeopleView = Ember.View.extend({
 	  people: [ { name: 'Yehuda' },
 	            { name: 'Tom' } ]
 	});
+	*/
 
